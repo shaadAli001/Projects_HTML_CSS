@@ -62,7 +62,7 @@ body {
   color: white;
 }
 .menu_bar ul li:hover .sub_menu_1 ul li a:hover {
-  color: rgba(175, 163, 163, 0.637);
+  color: rgba(175, 163, 163, 0.65);
 }
 
 .menu_bar ul li:hover .sub_menu_1 ul li:last-child {
