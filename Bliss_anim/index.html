@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bliss.com</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="navbar">
+            <nav>
+                <div class="logo"><img src="./image/logo.png" alt=""></div>
+                <div class="nav-link">
+                    <ul>
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </div>
+                <div class="menu-icon">
+                    <img src="./image/menu.png" alt="">
+                </div>
+            </nav>
+        </div>
+        <div class="content">
+            <div class="social-icons">
+                <img src="./image/instagram.png" alt="">
+                <img src="./image/facebook.png" alt="">
+                <img src="./image/twitter.png" alt="">
+                <img src="./image/youtube.png" alt="">
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Search">
+                <img src="./image/search.png" alt="">
+            </div>
+        </div>
+        <img src="./image/cloud.png" alt="" id="cloud_img">
+        <img src="./image/plane.png" alt="" id="plane_img">
+
+        <div id="airballoon">
+            <img src="./image/balloon.png" id="balloon_1" alt="">
+            <img src="./image/balloon.png" id="balloon_2" alt="">
+            <img src="./image/balloon.png" id="balloon_3" alt="">
+        </div>
+        <img src="./image/pause.png" id="pause" alt="">
+    </div>
+    <script>
+        let img = document.getElementById("pause")
+        img.onclick = function () {
+            if (cloud_img.style.webkitAnimationPlayState == "paused") {
+                cloud_img.style.webkitAnimationPlayState = "running"
+                plane_img.style.webkitAnimationPlayState = "running";
+                airballoon.style.webkitAnimationPlayState = "running";
+                img.src = "./image/pause.png";
+            } else {
+                cloud_img.style.webkitAnimationPlayState = "paused"
+                plane_img.style.webkitAnimationPlayState = "paused";
+                airballoon.style.webkitAnimationPlayState = "paused";
+                img.src = "./image/play.png";
+            }
+        }
+    </script>
+</body>
+
+</html>

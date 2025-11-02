@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.main {
+  height: 100vh;
+  background: linear-gradient(#21b3e1, #fff);
+  position: relative;
+  overflow: hidden;
+}
+.navbar {
+  border-bottom: 1px solid white;
+  width: 100%;
+}
+nav {
+  display: flex;
+  width: 80%;
+  margin: 20px auto 0;
+  align-items: center;
+  position: sticky;
+}
+.logo {
+  flex-basis: 15%;
+}
+.logo img {
+  width: 100px;
+}
+.nav-link {
+  flex: 1;
+  text-align: center;
+}
+.nav-link ul li {
+  display: inline-block;
+  list-style: none;
+  padding: 15px 5px;
+  margin: 0px 25px;
+  position: relative;
+}
+.nav-link ul li a {
+  text-decoration: none;
+  color: #b7e7f6;
+}
+.nav-link ul li::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: transparent;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.nav-link ul li:hover::after {
+  background: white;
+}
+.active::after {
+  background: #fff !important;
+}
+.menu-icon {
+  flex-basis: 15%;
+}
+.menu-icon img {
+  float: right;
+  width: 35px;
+}
+.content {
+  width: 300px;
+  position: absolute;
+  top: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 2;
+}
+.social-icons img {
+  width: 18px;
+  margin: 0px 10px;
+  cursor: pointer;
+}
+.search-box {
+  margin-top: 20px;
+  border: 1px solid #b7e7f6;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(rgba(225, 225, 225, 0.2), rgba(225, 225, 225, 0));
+}
+.search-box input {
+  width: 100%;
+  padding: 7px 15px;
+  border-radius: 30px;
+  color: #b7e7f6;
+  border: 0;
+  background: transparent;
+  outline: none;
+}
+::placeholder {
+  color: #b7e7f6;
+}
+.search-box img {
+  width: 20px;
+  margin: 5px 10px;
+}
+#cloud_img {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: -100px;
+  animation: clouds 5s linear infinite;
+}
+@keyframes clouds {
+  0% {
+    top: -100px;
+  }
+  20% {
+    top: 100px;
+  }
+  80% {
+    top: 100px;
+  }
+  100% {
+    top: -100px;
+  }
+}
+
+#plane_img {
+  width: 200px;
+  position: absolute;
+  top: 180px;
+  left: -250px;
+  z-index: 2;
+  animation: fly 5s linear infinite;
+}
+@keyframes fly {
+  0% {
+    left: -250px;
+  }
+  20% {
+    left: 250px;
+  }
+  80% {
+    left: 250px;
+  }
+  100% {
+    left: 110%;
+  }
+}
+#airballoon {
+  height: 400px;
+  width: 700px;
+  position: absolute;
+  bottom: -450px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: balloon 5s linear infinite;
+}
+@keyframes balloon {
+  0% {
+    bottom: -450px;
+  }
+  20% {
+    bottom: 100px;
+  }
+  80% {
+    bottom: 100px;
+  }
+  100% {
+    bottom: -450px;
+  }
+}
+
+#balloon_1 {
+  width: 150px;
+  opacity: 0.4;
+}
+#balloon_2 {
+  width: 350px;
+}
+#balloon_3 {
+  width: 180px;
+  opacity: 0.5;
+}
+#pause {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
