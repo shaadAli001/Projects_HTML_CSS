@@ -67,15 +67,16 @@ nav {
 .menu-icon img {
   float: right;
   width: 35px;
+  margin-bottom: 0.5rem;
 }
 .dropdown {
   display: none;
   position: absolute;
-  top: 200%;
-  right: -62px;
+  top: 100%;
+  right: -100px;
   width: 130px;
-  background-image: rgb(33, 179, 225);
-  box-shadow: 10px 10px 8px rgba(49, 41, 41, 0.751);
+  background: #21b3e1;
+  box-shadow: 10px 10px 8px rgba(49, 41, 41, 0.551);
   border-radius: 5px;
   z-index: 999;
 }
